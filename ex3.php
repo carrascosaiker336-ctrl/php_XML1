@@ -1,0 +1,21 @@
+<?php
+$note=<<<XML
+<note>
+<to>Tove</to>
+<from>Jani</from>
+<heading>Reminder</heading>
+<body>Do not forget me this weekend!</body>
+</note>
+XML;
+
+$xml = new SimpleXMLElement($note);
+
+// Add a child element to the body element
+$xml->body->addChild("date","2014-01-01");
+
+// Add a child element after the last element inside note
+$footer = $xml->addChild("footer","Some footer text"); //addchild añade etiquetas
+header('Content-Type: text/xml');
+header ('content-Disposition: attachment;filename=myFile.xml'); //esto sirve para descargar nuestor archivo
+echo $xml->saveXML("ex3");
+?>
