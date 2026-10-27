@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "PHP: Vista previa",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "php -S 0.0.0.0:8000 -t \"${workspaceFolder}\"",
+      "serverReadyAction": {
+        "pattern": "Development Server \\(http://0\\.0\\.0\\.0:([0-9]+)\\) started",
+        "uriFormat": "http://localhost:%s",
+        "action": "openExternally"
+      }
+    }
+  ]
+}

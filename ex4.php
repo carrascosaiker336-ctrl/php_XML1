@@ -19,7 +19,7 @@ $result = $xml->xpath("/note/to");
 
 print_r($result);
 
-echo $xml->asXML("ex4")
+echo $xml->asXML()
 ?>
 
 </body>

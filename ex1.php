@@ -10,5 +10,5 @@
 
     $xml = new SimpleXMLElement($note);
     header('Content-Type: text/xml');
-    echo $xml->asXML("ex1");
+    echo $xml->asXML();
 ?>

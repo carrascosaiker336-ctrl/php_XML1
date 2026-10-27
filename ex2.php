@@ -15,5 +15,5 @@ $xml->addAttribute("type","private");
 $xml->body->addAttribute("date","2014-01-01"); //crea atributos 1 es el atributo el 2 es el valor del atributo
 header('Content-Type: text/xml');
 //header ('content-Disposition: attachment;filename=myFile.xml'); //esto sirve para descargar nuestor archivo en nustro ordenador
-echo $xml->asXML("pollita.xml");
+echo $xml->asXML();
 ?>
