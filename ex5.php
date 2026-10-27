@@ -1,9 +1,9 @@
 <?php
 
 
-   $name="Aureliano";
-   $age = "33";
-
+   $name="iker";
+   $age = "19";
+   $cerebro = "101 iq";
 
    $note=<<<XML
 
@@ -13,6 +13,8 @@
        <age>{$age}</age>
        <from>Jani</from>
        <heading>Reminder</heading>
+       <cerebro>medida de {$cerebro}</cerebro>
+       <aura> {$aura}</aura>
        <body>Do not forget me this weekend!</body>
    </note>
    XML;
@@ -26,12 +28,13 @@
 //die;
    $mesage=<<<XML
        <message>
-           Mi nombre es {$result[0]} y mi edad es {$age}
+           Mi nombre es {$result[0]} y mi edad es {$age} mi iq es de {$cerebro} controld de aura {$aura}
        </message>
    XML;
 
+   //$r = new SimpleXMLElement($mesage);
 
-   $r = new SimpleXMLElement($mesage);
+  $r = new SimpleXMLElement($note);
 
 
    header("Content-Type: application/xml; charset=UTF-8");
