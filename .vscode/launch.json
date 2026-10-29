@@ -8,7 +8,7 @@
       "command": "php -S 0.0.0.0:8000 -t \"${workspaceFolder}\"",
       "serverReadyAction": {
         "pattern": "Development Server \\(http://0\\.0\\.0\\.0:([0-9]+)\\) started",
-        "uriFormat": "http://localhost:%s",
+        "uriFormat": "http://localhost:%s/ex1.php",
         "action": "openExternally"
       }
     }
