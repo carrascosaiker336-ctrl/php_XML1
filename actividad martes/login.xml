@@ -9,9 +9,15 @@
         <dni>87654321B</dni>
     </user>
     <user>
-        <nombre>iker</nombre>
+        <nombre>Iker</nombre>
         <dni>2342342g</dni>
         <fecha>2026-10-30</fecha>
         <logout/>
     </user>
-
+    <user>
+        <nombre>Adrian</nombre>
+        <dni>2342342l</dni>
+        <fecha>2026-10-30</fecha>
+        <logout/>
+    </user>
+</users>
