@@ -8,4 +8,10 @@
         <nombre>Luis</nombre>
         <dni>87654321B</dni>
     </user>
-</users>
+    <user>
+        <nombre>iker</nombre>
+        <dni>2342342g</dni>
+        <fecha>2026-10-30</fecha>
+        <logout/>
+    </user>
+
