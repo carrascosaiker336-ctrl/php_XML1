@@ -8,9 +8,8 @@ function login($user, $id)
     $bool = false;
 
     foreach ($result as $usuario) {
-        if ($usuario->nombre == $user && $usuario->dni == $id) {
-            echo "Usuario y DNI correctos";
-            $_SESSION['nombre'] = (string) $usuario->nombre;
+        if ($usuario->nombre == $user && $usuario->password == $id) {
+            echo "Usuario y contraseña correctos";
             $bool = true;
             break;
         }

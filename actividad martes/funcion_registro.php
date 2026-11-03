@@ -10,7 +10,7 @@ function registro($user, $id) {
 
     foreach ($result as $usuario) {
 
-        if ($usuario->nombre == $user && $usuario->dni == $id) {
+        if ($usuario->nombre == $user && $usuario->password == $id) {
             echo "Usuario ya creado";
             $bool = true;
             break;
@@ -22,8 +22,8 @@ function registro($user, $id) {
         $nuevoUsuario = $xml->addChild("user");
 
         $nuevoUsuario->addChild("nombre", $user);
-        $nuevoUsuario->addChild("dni", $id);
-        $nuevoUsuario->addChild("fecha", date("Y-m-d", $t));
+        $nuevoUsuario->addChild("password", $id);
+        $nuevoUsuario->addChild("fecha", date("Y-m-d H:i:s", $t));
         $nuevoUsuario->addChild("logout", "");
 
         $xml->asXML(__DIR__ . '/login.xml');
